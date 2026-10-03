@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(248, 234, 207);
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .links a {
+            color: rgb(255, 142, 12);
+            font-weight: bold;
+            text-decoration: none;
+            border: solid 1px;
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .links a:hover {
+            transform: translateY(-6px);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-decoration: none;
+            border-color: #555555;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        .nav1 p {
+            font-size: 32px;
+            color: rgb(255, 142, 12);
+            font-weight: bold;
+            margin-left: 50px;
+        }
+
+        nav {
+            top: 0; left: 0; right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            font-family: 'Inter', sans-serif, system-ui;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            background: #0a57bd;
+        }
+
+        .navi {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .sec1 {
+            position: relative;
+            min-height: 10vh;
+            scroll-snap-align: start;
+            display: flex;
+            padding: 70px 70px;
+            font-size: 30px;
+            flex-direction: column;
+            background-color: rgb(248, 234, 207);
+        }
+
+        .hero-name {
+            font-family: 'Inter', sans-serif, system-ui;
+            color: #0a57bd;
+            display: flex;
+            gap: 20px;
+        }
+
+        .sec1 p {
+            font-size: 20px;
+            color: rgb(255, 142, 12);
+        }
+
+        .sec1 .eyebrow {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: rgb(255, 142, 12);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif, system-ui;
+        }
+
+        .artworks {
+            padding: 80px 50px;
+            background-color: rgb(248, 234, 207);
+            color: #0a57bd;
+            font-family: 'Inter', sans-serif, system-ui;
+        }
+
+        .artworks .eyebrow {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: rgb(255, 142, 12);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .artworks .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .artworks .work-card {
+            background: #0a57bd;
+            border: 2px solid rgb(255, 142, 12);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 150px;
+        }
+
+        .artworks .work-card:hover {
+            transform: translateY(-6px);
+            border-color: #555555;
+        }
+
+        .artworks .work-code {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: rgb(255, 142, 12);
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .artworks .work-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .artworks .work-medium {
+            font-size: 0.95rem;
+            color: rgb(255, 142, 12);
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #0a57bd;
+            background-color: rgb(248, 234, 207);
+            font-family: 'Inter', sans-serif, system-ui;
+        }
+
+        .line {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border: solid;
+            border-color: #0a57bd;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="links"> 
+        <nav class="nav1">
+            <p>MY WEBSITE</p>
+            <div></div>
+            <ul class="navi">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#">Artworks</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sec1" id="Home">
+        <div class="eyebrow">HOME</div>
+        <p class="p2"></p>
+        <h1 class="hero-name">ROMEJAY SAN JUAN</h1>
+        <p>Lorem ipsum dolor, sit amet cosectetur adipisicing elit. Laborum commodi doloribus labore 
+            <br>exercitationem maiores inventore, ipsum dignissimos, tenetur qui consequatur possimus 
+            <br>repellendus praesentium non fugiat vel omnis aut eos aliquam.</p>
+    </section>
+
+    <section class="artworks">
+        <div class="eyebrow">ARTWORKS</div>
+        <div class="works-grid">
+
+            <div class="work-card">
+                <div class="work-code">ART-1</div>
+                <div class="work-title">Drawing1</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-2</div>
+                <div class="work-title">Drawing2</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-3</div>
+                <div class="work-title">Concept Sketch</div>
+                <div class="work-medium">Mixed Media, 2026</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="artworks">
+        <div class="eyebrow">EXHIBIT</div>
+        <div class="works-grid">
+
+            <div class="work-card">
+                <div class="work-code">ART-1</div>
+                <div class="work-title">Drawing1</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-2</div>
+                <div class="work-title">Drawing2</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-3</div>
+                <div class="work-title">Concept Sketch</div>
+                <div class="work-medium">Mixed Media, 2026</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="artworks">
+        <div class="eyebrow">MEDIA</div>
+        <div class="works-grid">
+
+            <div class="work-card">
+                <div class="work-code">ART-1</div>
+                <div class="work-title">Drawing1</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-2</div>
+                <div class="work-title">Drawing2</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-3</div>
+                <div class="work-title">Concept Sketch</div>
+                <div class="work-medium">Mixed Media, 2026</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="artworks">
+        <div class="eyebrow">OTHER MEDIUMS</div>
+        <div class="works-grid">
+
+            <div class="work-card">
+                <div class="work-code">ART-1</div>
+                <div class="work-title">Drawing1</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-2</div>
+                <div class="work-title">Drawing2</div>
+                <div class="work-medium">Digital Art, 2025</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-code">ART-3</div>
+                <div class="work-title">Concept Sketch</div>
+                <div class="work-medium">Mixed Media, 2026</div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="line">
+    <footer> 
+        <p>Contact Us:</p>
+        <p>Email: sanjuanromejay@gmail.com</p>
+    </footer>
+
+</body>
+</html>
